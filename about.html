@@ -3,84 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Інформація про мене, мої навички та освіту">
-    <meta name="author" content="Ростислав">
     <title>Про мене | Портфоліо</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="page">
+        <header>
+            <h1>Моє Портфоліо</h1>
+            <nav class="nav">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Головна</a></li>
+                    <li><a href="about.html" class="nav-link">Про мене</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <header>
-        <h1>Про мене</h1>
-        <nav>
+        <aside class="sidebar">
+            <h3>Меню</h3>
             <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><strong>Про мене</strong></li>
-                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="#" class="nav-link">Мої навички</a></li>
+                <li><a href="#" class="nav-link">Завантажити CV</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Освіта та Досвід</h2>
-            <p>Зараз я здобуваю освіту у сфері інформаційних технологій. Мій шлях лише починається, але я вже маю певні досягнення.</p>
-            
-            <h3>Мої технічні навички</h3>
-            <table border="1">
-                <caption>Оцінка моїх поточних знань</caption>
-                <thead>
-                    <tr>
-                        <th>Технологія</th>
-                        <th>Рівень</th>
-                        <th>Досвід</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML5</td>
-                        <td>Початківець</td>
-                        <td>1 місяць</td>
-                    </tr>
-                    <tr>
-                        <td>Git / GitHub</td>
-                        <td>Базовий</td>
-                        <td>1 тиждень</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Додаткова інформація</h2>
-            <dl>
-                <dt>Хобі</dt>
-                <dd>Читання технічної літератури, фотографія та відеоігри.</dd>
-                
-                <dt>Мови</dt>
-                <dd>Українська (рідна), Англійська (B1).</dd>
-            </dl>
-        </section>
-
-        <aside>
-            <h3>Цікавий факт</h3>
-            <p>Моя перша програма була написана на шкільному уроці інформатики, і це був простий калькулятор!</p>
         </aside>
-        <section>
-            <h2>Моя відео-презентація</h2>
-            <figure>
-                <video controls width="640">
-                    <source src="video/intro.mp4" type="video/mp4">
-                    Ваш браузер не підтримує відео.
-                </video>
-                <figcaption>Коротке відео про мій шлях у програмуванні</figcaption>
-            </figure>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Ростислав. Всі права захищені.</p>
-    </footer>
+        <main class="content">
+            <section class="section">
+                <h2>Освіта та Досвід</h2>
+                <p>Зараз я здобуваю освіту у сфері інформаційних технологій.</p>
+                
+                <table border="1">
+                    <caption>Оцінка моїх поточних знань</caption>
+                    <thead>
+                        <tr>
+                            <th>Технологія</th>
+                            <th>Рівень</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5 / CSS3</td>
+                            <td>Базовий</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
+            <section class="section">
+                <h2>Моя відео-презентація</h2>
+                <figure>
+                    <video controls style="max-width: 100%; height: auto;">
+                        <source src="video/intro.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео.
+                    </video>
+                    <figcaption>Коротке відео про мій шлях у програмуванні</figcaption>
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Ростислав. Всі права захищені.</p>
+        </footer>
+    </div>
 </body>
 </html>
