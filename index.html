@@ -6,6 +6,7 @@
     <meta name="description" content="Моє персональне портфоліо">
     <meta name="author" content="Ростислав">
     <title>Головна | Портфоліо</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -36,7 +37,15 @@
                 <li>Створити своє перше повноцінне портфоліо.</li>
             </ul>
 
-            <figure>
+            <div class="scroll-box">
+                <p>Я захоплююсь створенням веб-сайтів і зараз вивчаю <strong>основи веб-розробки</strong>. Моя мета — стати <em>професіоналом</em> у своїй справі. Кожен рядок коду наближає мене до цієї мети!</p>
+            </div>
+
+            <!-- Parent container for position: relative -->
+            <figure class="profile-figure">
+                <img src="images/photo.jpg" alt="Моє фото" width="200">
+                <!-- Child element for position: absolute -->
+                <span class="status-badge">Online</span>
                 <figcaption>Це я працюю над кодом</figcaption>
             </figure>
         </section>
